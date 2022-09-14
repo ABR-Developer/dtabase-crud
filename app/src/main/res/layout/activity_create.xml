@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/CreateName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/StudentName"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/CreateRollNumber"
+        app:layout_constraintEnd_toEndOf="@+id/CreateRollNumber"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/CreateRollNumber"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/CreateRollNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/RollNumber"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/CreateSwitchStudent"
+        app:layout_constraintEnd_toEndOf="@+id/CreateSwitchStudent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/CreateSwitchStudent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateName" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/CreateSwitchStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/IsEnrolled"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCreateRecord"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCreateRecord"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/buttonCreateRecord"
+        app:layout_constraintTop_toBottomOf="@+id/CreateRollNumber" />
+
+    <Button
+        android:id="@+id/buttonCreateRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Add"
+        app:layout_constraintBottom_toTopOf="@+id/CreateMessage"
+        app:layout_constraintEnd_toEndOf="@+id/CreateMessage"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/CreateMessage"
+        app:layout_constraintTop_toBottomOf="@+id/CreateSwitchStudent" />
+
+    <TextView
+        android:id="@+id/CreateMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/CreateViewAllRecords"
+        app:layout_constraintEnd_toEndOf="@+id/CreateViewAllRecords"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/CreateViewAllRecords"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCreateRecord" />
+
+    <Button
+        android:id="@+id/CreateViewAllRecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ButtonViewAll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CreateMessage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

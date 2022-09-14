@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Database CRUD</string>
+    <string name="StudentName">Enter student name</string>
+    <string name="new_StudentName">Enter new student name</string>
+    <string name="RollNumber">Enter roll number</string>
+    <string name="IsEnrolled">IsEnrolled</string>
+    <string name="ButtonViewAll">View All Records</string>
+    <string name="Add">Add the record</string>
+    <string name="success_add">The record is added successfully</string>
+    <string name="Read">Find the record</string>
+    <string name="success_read">Record finds successfully</string>
+    <string name="Update">Update the record</string>
+    <string name="success_update">The record is updated successfully</string>
+    <string name="Remove">Remove the record</string>
+    <string name="success_remove">The record is deleted successfully</string>
+    <string name="no_record">No Record Exist with roll number</string>
+</resources>
